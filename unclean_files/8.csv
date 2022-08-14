@@ -1,0 +1,21 @@
+FL,modEL,Trans,cyl,hwy,DISPl
+p,corvette,auto(l4),8,23,5.7
+r,4runner 4wd,auto(l4),4,20,2.7
+r,grand cherokee 4wd,auto(l5),6,19,3.7
+d,new beetle,manual(m5),4,44,1.9
+r,dakota pickup 4wd,manual(m5),8,17,5.2
+r,caravan 2wd,auto(l4),6,24,3.3
+p,a4 quattro,manual(m5),4,26,1.8
+r,pathfinder 4wd,auto(l4),6,17,3.3
+r,ram 1500 pickup 4wd,auto(l5),8,17,5.7
+r,malibu,auto(l4),4,27,2.4
+e,grand cherokee 4wd,auto(l5),8,12,4.7
+r,sonata,manual(m5),4,31,2.4
+r,new beetle,auto(l4),4,26,2
+r,4runner 4wd,auto(l5),8,17,4.7
+r,maxima,manual(m5),6,25,3
+r,toyota tacoma 4wd,manual(m5),4,20,2.7
+r,expedition 2wd,auto(l6),8,18,5.4
+r,forester awd,manual(m5),4,25,2.5
+r,tiburon,manual(m5),4,28,2
+p,a4 quattro,auto(l5),4,25,1.8

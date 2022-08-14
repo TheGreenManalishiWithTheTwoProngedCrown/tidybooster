@@ -1,0 +1,21 @@
+cyl,DrV,Fl,YeAr,TraNs,MAnuFACTUrER
+8,4,r,1999,auto(l4),chevrolet
+8,4,r,2008,auto(l5),jeep
+6,4,r,1999,manual(m5),toyota
+6,4,p,1999,auto(l5),audi
+8,4,r,2008,auto(l4),ford
+4,f,d,1999,manual(m5),volkswagen
+8,r,r,2008,manual(m5),ford
+5,f,r,2008,manual(m5),volkswagen
+4,f,r,1999,manual(m5),toyota
+6,f,r,2008,auto(s5),toyota
+4,4,p,2008,auto(l4),subaru
+4,4,r,1999,manual(m5),subaru
+8,r,p,2008,auto(s6),chevrolet
+6,f,r,2008,auto(l5),hyundai
+4,f,r,1999,auto(l4),toyota
+4,4,p,1999,auto(l5),audi
+4,f,r,1999,manual(m5),nissan
+8,4,p,1999,auto(l4),land rover
+6,f,r,1999,auto(l4),nissan
+6,f,r,1999,auto(l4),pontiac

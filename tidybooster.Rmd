@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(tidyverse)
 library(janitor)
+library(fs)
 ```
  
 
@@ -81,5 +82,84 @@ name_repair = make_clean_names,
 col_select = c(manufacturer, model)) %>%
 glimpse()
 ```
+ 
+## 1.2 read many files into R
+
+Es muy comun leer data esparcida en muchos archivos. Buscaremos automatizar esto 
+
+Para este ejemplo crearemos 25 archivos csv tomando muestras de los datos mpg
+```{r}
+mpg_samples <- map(1:25, ~ slice_sample(mpg,n =20))
+iwalk(mpg_samples, ~ write_csv(.,paste0("many_files/",.y,".csv")))
+```
 
 
+Antes de leer los archivos creamos un vector con todos los file paths. Hay muchas opciones, podemos usar list.files, o podemos usar dir_ls
+
+```{r}
+(csv_files_list_files <- list.files(path = "many_files/", pattern = "csv", full.names = TRUE))
+```
+Para leer todos estos archivos usamos la funcion map_dfr de la libreria purrr
+
+
+```{r}
+data_frames <- map_dfr(csv_files_list_files, ~ read_csv(.x,show_col_types = FALSE))
+```
+
+
+podemos lograr lo mismo pasando el vector de archivos a la funcionn read_css
+
+```{r}
+read_csv(csv_files_list_files, id = "filename", show_col_types = FALSE) %>% glimpse()
+```
+
+
+podemos meter el archivo de origen usando el primer metodo agrefando una linea de codigo
+
+```{r}
+map_dfr(csv_files_list_files,
+~ read_csv(.x, , show_col_types = FALSE) %>%
+mutate(filename = .x)) %>%
+glimpse()
+```
+
+
+
+pero que sucede cuando los nombres de las columnas son incosistentes?
+
+```{r}
+mpg_samples <- map(1:10, ~ slice_sample(mpg, n = 20))
+inconsistent_dframes <- map(mpg_samples,~ janitor::clean_names(dat = .x, case = "random"))
+```
+
+
+
+Para mejorar las cosas elijamos un conjunto de columnas aleatorios
+
+
+
+```{r}
+inconsistent_dframes <- map(inconsistent_dframes,
+~ .x[sample(1:length(.x), sample(1:length(.x), 1))])
+map(inconsistent_dframes, ~ colnames(.x)) %>%
+head
+```
+
+```{r}
+iwalk(inconsistent_dframes,
+~ write_csv(.x, paste0("unclean_files/", .y, ".csv")))
+```
+
+
+Para leer todos estos archivos sin terminar con un monton de nombres repetidos e incosistentes
+podemos agregar una convencion de tipado para la lectura de las columnas
+
+```{r}
+many_columns_data_frame <- dir_ls(path = "unclean_files/",
+glob = "*.csv", type = "file") %>%
+map_dfr(~ read_csv(.x, name_repair = tolower, show_col_types = FALSE) %>%
+mutate(filename = .x))
+many_columns_data_frame %>% glimpse()
+```
+
+$\sigma$

@@ -1,0 +1,21 @@
+manufacturer,model,displ,year,cyl,trans,drv,cty,hwy,fl,class
+nissan,altima,2.4,1999,4,manual(m5),f,21,29,r,compact
+subaru,impreza awd,2.2,1999,4,auto(l4),4,21,26,r,subcompact
+nissan,pathfinder 4wd,3.3,1999,6,auto(l4),4,14,17,r,suv
+ford,f150 pickup 4wd,5.4,2008,8,auto(l4),4,13,17,r,pickup
+honda,civic,1.6,1999,4,manual(m5),f,25,32,r,subcompact
+chevrolet,c1500 suburban 2wd,6,2008,8,auto(l4),r,12,17,r,suv
+ford,mustang,4.6,1999,8,auto(l4),r,15,21,r,subcompact
+chevrolet,c1500 suburban 2wd,5.3,2008,8,auto(l4),r,14,20,r,suv
+pontiac,grand prix,5.3,2008,8,auto(s4),f,16,25,p,midsize
+volkswagen,passat,1.8,1999,4,manual(m5),f,21,29,p,midsize
+volkswagen,jetta,2,1999,4,auto(l4),f,19,26,r,compact
+ford,f150 pickup 4wd,5.4,1999,8,auto(l4),4,11,15,r,pickup
+toyota,land cruiser wagon 4wd,4.7,1999,8,auto(l4),4,11,15,r,suv
+toyota,toyota tacoma 4wd,4,2008,6,manual(m6),4,15,18,r,pickup
+ford,mustang,4.6,1999,8,manual(m5),r,15,22,r,subcompact
+ford,expedition 2wd,5.4,2008,8,auto(l6),r,12,18,r,suv
+audi,a4 quattro,2,2008,4,auto(s6),4,19,27,p,compact
+ford,mustang,5.4,2008,8,manual(m6),r,14,20,p,subcompact
+dodge,caravan 2wd,3.8,1999,6,auto(l4),f,15,21,r,minivan
+jeep,grand cherokee 4wd,4.7,2008,8,auto(l5),4,14,19,r,suv

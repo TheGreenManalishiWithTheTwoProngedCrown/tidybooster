@@ -1,0 +1,21 @@
+manufacturer,model,displ,year,cyl,trans,drv,cty,hwy,fl,class
+hyundai,tiburon,2,1999,4,manual(m5),f,19,29,r,subcompact
+toyota,camry,2.4,2008,4,auto(l5),f,21,31,r,midsize
+volkswagen,passat,3.6,2008,6,auto(s6),f,17,26,p,midsize
+ford,mustang,3.8,1999,6,manual(m5),r,18,26,r,subcompact
+dodge,caravan 2wd,3.3,1999,6,auto(l4),f,16,22,r,minivan
+toyota,camry solara,3,1999,6,auto(l4),f,18,26,r,compact
+ford,mustang,4,2008,6,auto(l5),r,16,24,r,subcompact
+toyota,land cruiser wagon 4wd,4.7,1999,8,auto(l4),4,11,15,r,suv
+toyota,camry solara,2.2,1999,4,auto(l4),f,21,27,r,compact
+volkswagen,jetta,2.8,1999,6,manual(m5),f,17,24,r,compact
+ford,mustang,4.6,1999,8,manual(m5),r,15,22,r,subcompact
+subaru,forester awd,2.5,2008,4,manual(m5),4,19,25,p,suv
+toyota,corolla,1.8,1999,4,auto(l4),f,24,33,r,compact
+ford,mustang,4,2008,6,manual(m5),r,17,26,r,subcompact
+volkswagen,new beetle,2.5,2008,5,auto(s6),f,20,29,r,subcompact
+toyota,camry solara,2.4,2008,4,manual(m5),f,21,31,r,compact
+volkswagen,new beetle,1.9,1999,4,manual(m5),f,35,44,d,subcompact
+volkswagen,jetta,2.8,1999,6,auto(l4),f,16,23,r,compact
+volkswagen,gti,2,1999,4,manual(m5),f,21,29,r,compact
+ford,explorer 4wd,5,1999,8,auto(l4),4,13,17,r,suv
